@@ -15,9 +15,25 @@
       vitae adipisci dolorum mollitia ipsum quam sit reprehenderit assumenda.
     </p>
     <form id="survey-form" action="">
-        <input id="name" type="text" required>
-        <input id="email" type="email" required>
-        <input id="number" type="number" required>
+      <label id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Your Name Here" required>
+        <label id="email-label">Email</label>
+        <input id="email" type="email" placeholder="Your Email Here" required>
+        <label id="number-label">Number</label>
+        <input id="number" type="number" placeholder="Your Number" min="0" max="100" required>
+        <select id="dropdown">
+          <option>Option 1</option>
+          <option>Option 3</option>
+        </select>
+        <input type="radio" name="rButton1">
+        <input type="radio" name="rButton2">
+
+        <input type="checkbox" value="Checkbox 1" >
+        <input type="checkbox" value="Checkbox 2" >
+        <input type="checkbox" value="Checkbox 3" >
+
+        <textarea></textarea>
+        <button id="submit" type="submit">Submit Form</button>
     </form>
   </body>
 </html>
